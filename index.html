@@ -235,19 +235,20 @@ transform: scale(1.05);
 }
 /* Стили свечи */
 .cake {
-background: #ffffff;
-border-radius: 10px;
-position: absolute;
-top: 228px;
-left: 50%;
-margin-left: -2.4px;
-margin-top: -8.33333333px;
-width: 5px;
-height: 35px;
-transform: translateY(-300px);
-backface-visibility: hidden;
-animation: in 500ms 6s ease-out forwards;
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 350px; /* было 128px — стало ниже */
+  left: 50%;
+  margin-left: -2.4px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 35px;
+  transform: translateY(-500px);
+  backface-visibility: hidden;
+  animation: in 500ms 6s ease-out forwards;
 }
+
 .cake:after,
 .cake:before {
 background: rgba(255, 0, 0, 0.4);
@@ -767,3 +768,4 @@ behavior: 'smooth'
 </script>
 </body>
 </html>
+
